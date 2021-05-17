@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<p>
+<% answer = params[:input].chars.to_set %>
+<% letters = params[:letters].chars.to_set %>
+<% if answer.subset?(letters) %>
+<%= answer %>
+<% end %>
+</p>
